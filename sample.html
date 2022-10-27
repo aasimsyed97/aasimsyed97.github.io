@@ -35,11 +35,58 @@
             </div> 
             <div class="about-col-2">  
                 <h1 class="sub-title"> About Me</h1> 
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quod dignissimos labore similique delectus earum magni asperiores quas nesciunt molestiae fugit perferendis dolorem, nulla expedita et inventore corporis! Neque, accusantium!</p>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quod dignissimos labore similique delectus earum magni asperiores quas nesciunt molestiae fugit perferendis dolorem, nulla expedita et inventore corporis! Neque, accusantium!</p> 
+                <div class="tab-titles"> 
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p> 
+                    <p class="tab-links" onclick="opentab('experiance')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('eduction')"> Eduction</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills"> 
+                    <ul> 
+                        <li> <span> HTML</span>  </li> 
+                        <li> <span> CSS</span>  </li> 
+                        <li> <span> JavaScript</span>  </li> 
+                        <li> <span> JAVA</span>  </li> 
+                        <li> <span> SQL</span>  </li> 
+                        <li> <span> SprintBoot</span>  </li> 
+                       
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="experiance"> 
+                    <ul> 
+                        <li> <span> Dec 2020 - April 2022</span><br> Vocational Trainer  </li> 
+                       
+                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="eduction"> 
+                    <ul> 
+                        <li> <span> Full-Stack Web Development </span> <br>Masai School "Current"</li> 
+                        <li> <span> BE (Civil Engg)</span><br> Sinhgad Academy Kondhwa Pune "2016-2019" </li> 
+                        <li> <span> Diploma in CE</span><br> Govt. Polytechnic Amravati "2013-2016" </li> 
+                       
+                       
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
   </div> 
 
 </body>
-</html>
+</html> 
+ <script> 
+  var tablinks = document.getElementsByClassName("tab-links"); 
+  var tabcontents = document.getElementsByClassName("tab-contents") 
+
+  function opentab(tabname) { 
+    for(tablink of tablinks){ 
+        tablink.classList.remove("active-link");
+    } 
+    for(tabcontent of tabcontents){ 
+       tabcontent.classList.remove("active-tab");
+    } 
+    event.currentTarget.classList.add("active-link"); 
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+ </script>
