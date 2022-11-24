@@ -1,92 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title> 
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="./S.css">
+    <script src="https://kit.fontawesome.com/9631786d7d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <div id="header">  
-    <div class="container"> 
-        <nav> 
-            <img src="" alt="logo" class="logo"> 
-            <ul> 
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#">About</a></li>
-                <li> <a href="#">Services</a></li>
-                <li> <a href="#">Portfolio</a></li>
-                <li> <a href="#">contact</a></li>
-            </ul>
-        </nav> 
-        <div class="header-text"> 
-            <p> Full Stack Web Developer</p> 
-            <h1> Hi, I'm  <span> Aasim Syed </span> </h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="logo" class="logo">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Services</a></li>
+                    <li> <a href="#">Portfolio</a></li>
+                    <li> <a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> Full Stack Web Developer</p>
+                <h1> Hi, I'm <span> Aasim Syed </span> </h1>
+            </div>
         </div>
     </div>
-  </div>   
-   <!--About section  -->
-  <div id="about"> 
-    <div class="container"> 
-        <div class="row"> 
-            <div class="about-col-1">  
-                <img src="./assets/profilepic.jpg" alt="">
-            </div> 
-            <div class="about-col-2">  
-                <h1 class="sub-title"> About Me</h1> 
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quod dignissimos labore similique delectus earum magni asperiores quas nesciunt molestiae fugit perferendis dolorem, nulla expedita et inventore corporis! Neque, accusantium!</p> 
-                <div class="tab-titles"> 
-                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p> 
-                    <p class="tab-links" onclick="opentab('experiance')"> Experience</p>
-                    <p class="tab-links" onclick="opentab('eduction')"> Eduction</p>
-                </div> 
-                <div class="tab-contents active-tab" id="skills"> 
-                    <ul> 
-                        <li> <span> HTML</span>  </li> 
-                        <li> <span> CSS</span>  </li> 
-                        <li> <span> JavaScript</span>  </li> 
-                        <li> <span> JAVA</span>  </li> 
-                        <li> <span> SQL</span>  </li> 
-                        <li> <span> SprintBoot</span>  </li> 
-                       
-                    </ul>
-                </div> 
-                <div class="tab-contents" id="experiance"> 
-                    <ul> 
-                        <li> <span> Dec 2020 - April 2022</span><br> Vocational Trainer  </li> 
-                       
-                       
-                    </ul>
+    <!--About section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/profilepic.jpg" alt="">
                 </div>
-                <div class="tab-contents" id="eduction"> 
-                    <ul> 
-                        <li> <span> Full-Stack Web Development </span> <br>Masai School "Current"</li> 
-                        <li> <span> BE (Civil Engg)</span><br> Sinhgad Academy Kondhwa Pune "2016-2019" </li> 
-                        <li> <span> Diploma in CE</span><br> Govt. Polytechnic Amravati "2013-2016" </li> 
-                       
-                       
-                    </ul>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quod dignissimos labore similique
+                        delectus earum magni asperiores quas nesciunt molestiae fugit perferendis dolorem, nulla
+                        expedita et inventore corporis! Neque, accusantium!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('eduction')"> Eduction</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span> HTML</span> </li>
+                            <li> <span> CSS</span> </li>
+                            <li> <span> JavaScript</span> </li>
+                            <li> <span> JAVA</span> </li>
+                            <li> <span> SQL</span> </li>
+                            <li> <span> SprintBoot</span> </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li> <span> Dec 2020 - April 2022</span><br> Vocational Trainer </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="eduction">
+                        <ul>
+                            <li> <span> Full-Stack Web Development </span> <br>Masai School "Current"</li>
+                            <li> <span> BE (Civil Engg)</span><br> Sinhgad Academy Kondhwa Pune "2016-2019" </li>
+                            <li> <span> Diploma in CE</span><br> Govt. Polytechnic Amravati "2013-2016" </li>
+
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </div> 
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor doloribus hic, cumque
+                        praesentium expedita eum velit modi doloremque veritatis eveniet earum. Eum earum quod esse quae
+                        soluta ad deleniti.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                    <h2>lyst.com</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor doloribus hic, cumque
+                        praesentium expedita eum velit modi doloremque veritatis eveniet earum. Eum earum quod esse quae
+                        soluta ad deleniti.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <!-- <i class="fa-regular fa-list-check"></i> -->
+                    <h2>monday.com</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor doloribus hic, cumque
+                        praesentium expedita eum velit modi doloremque veritatis eveniet earum. Eum earum quod esse quae
+                        soluta ad deleniti.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor doloribus hic, cumque
+                        praesentium expedita eum velit modi doloremque veritatis eveniet earum. Eum earum quod esse quae
+                        soluta ad deleniti.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor doloribus hic, cumque
+                        praesentium expedita eum velit modi doloremque veritatis eveniet earum. Eum earum quod esse quae
+                        soluta ad deleniti.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor doloribus hic, cumque
+                        praesentium expedita eum velit modi doloremque veritatis eveniet earum. Eum earum quod esse quae
+                        soluta ad deleniti.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor doloribus hic, cumque
+                        praesentium expedita eum velit modi doloremque veritatis eveniet earum. Eum earum quod esse quae
+                        soluta ad deleniti.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor doloribus hic, cumque
+                        praesentium expedita eum velit modi doloremque veritatis eveniet earum. Eum earum quod esse quae
+                        soluta ad deleniti.</p>
+                    <a href="">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- poroject -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://media-thumbs.golden.com/o9o3Q56wN8VCroUyXJNMaiTR5BU=/200x200/smart/golden-storage-production.s3.amazonaws.com%2Ftopic_images%2F331973fb17704d3faa82a8247f24edc2.jpeg"
+                        alt="screenshot">
+                    <div class="layerd">
+                        <h3>SugarCosmetic</h3>
+                        <p> The clone of SugarCosmetic website,</p>
+                        <a href="#"> <i class="fa-brands fa-github"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://media-thumbs.golden.com/o9o3Q56wN8VCroUyXJNMaiTR5BU=/200x200/smart/golden-storage-production.s3.amazonaws.com%2Ftopic_images%2F331973fb17704d3faa82a8247f24edc2.jpeg"
+                        alt="screenshot">
+                    <div class="layerd">
+                        <h3>LYST.com</h3>
+                        <p> The clone of SugarCosmetic website,</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://media-thumbs.golden.com/o9o3Q56wN8VCroUyXJNMaiTR5BU=/200x200/smart/golden-storage-production.s3.amazonaws.com%2Ftopic_images%2F331973fb17704d3faa82a8247f24edc2.jpeg"
+                        alt="screenshot">
+                    <div class="layerd">
+                        <h3>Monday.com</h3>
+                        <p> The clone of SugarCosmetic website,</p>
+                        <a href="#"> <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 </body>
-</html> 
- <script> 
-  var tablinks = document.getElementsByClassName("tab-links"); 
-  var tabcontents = document.getElementsByClassName("tab-contents") 
 
-  function opentab(tabname) { 
-    for(tablink of tablinks){ 
-        tablink.classList.remove("active-link");
-    } 
-    for(tabcontent of tabcontents){ 
-       tabcontent.classList.remove("active-tab");
-    } 
-    event.currentTarget.classList.add("active-link"); 
-    document.getElementById(tabname).classList.add("active-tab");
-  }
- </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
