@@ -10,10 +10,20 @@
     color: black;
    
 }
-
+.icons{ 
+     width: 15%;
+    size: 10px; 
+   
+    display: flex; 
+    gap: 30px;
+} 
+.icons a img{ 
+    width: 100%; 
+    border-radius: 20%;
+}
 
 body {
-    background:black;
+    background:#080808;
     color: #fff;
 }
 
