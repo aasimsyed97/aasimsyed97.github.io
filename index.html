@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+     
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="logo" class="logo">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Services</a></li>
+                    <li> <a href="#">Portfolio</a></li>
+                    <li> <a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> Full Stack Web Developer</p>
+                <h1> Hi, I'm <span> Aasim Syed </span> </h1>
+            </div>
+        </div>
+    </div>
+    <!--About section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/profilepic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p> I am Full-Stack Web Developer, Who is speciallized JAVA Backend. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('eduction')"> Eduction</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span> HTML</span> </li>
+                            <li> <span> CSS</span> </li>
+                            <li> <span> JavaScript</span> </li>
+                            <li> <span> JAVA</span> </li>
+                            <li> <span> SQL</span> </li>
+                            <li> <span> SprintBoot</span> </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li> <span> Dec 2020 - April 2022</span><br> Vocational Trainer </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="eduction">
+                        <ul>
+                            <li> <span> Full-Stack Web Development </span> <br>Masai School "Current"</li>
+                            <li> <span> BE (Civil Engg)</span><br> Sinhgad Academy Kondhwa Pune "2016-2019" </li>
+                            <li> <span> Diploma in CE</span><br> Govt. Polytechnic Amravati "2013-2016" </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
