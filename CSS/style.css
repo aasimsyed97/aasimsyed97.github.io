@@ -45,7 +45,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 28px;
     position: relative;
 }
 
@@ -53,7 +53,7 @@ nav ul li a::after {
     content: ' ';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: rgb(156, 185, 243);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -75,7 +75,7 @@ header-text h1 {
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    color:  rgb(156, 185, 243);
 }
 
 /* About */
@@ -128,7 +128,7 @@ header-text h1 {
     content: ' ';
     width: 0;
     height: 3px;
-    background-color: #ff004f;
+    background-color:  rgb(156, 185, 243);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -147,7 +147,7 @@ header-text h1 {
 }
 
 .tab-contents ul li span {
-    color: #ff004f;
+    color:  rgb(156, 185, 243);
     font-size: 14px;
 }
 
@@ -192,7 +192,7 @@ header-text h1 {
 }
 
 .services-list div:hover {
-    background: #ff004f;
+    background: rgb(156, 185, 243);
     transform: translateY(-10px);
 }
 
@@ -226,7 +226,7 @@ header-text h1 {
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f); 
+    background: linear-gradient(rgba(0, 0, 0, 0.6),  rgb(156, 185, 243)); 
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -250,7 +250,7 @@ header-text h1 {
 
 .layer a {
     margin-top: 20px;
-    color: #ff004f;
+    color:  rgb(156, 185, 243);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -280,7 +280,7 @@ height: 100%;
 
 } 
 .contact-left p i{ 
-    color:#ff004f;
+    color: rgb(156, 185, 243);
     margin-right: 15px; 
     font-size: 25px;
 } 
@@ -297,14 +297,14 @@ height: 100%;
 
 } 
 .social-icons a:hover{ 
-    color:#ff004f;
+    color: rgb(156, 185, 243);
     transform: translateY(-5px);
 } 
 .btn{ 
     display: block; 
     margin: 50px auto; 
     width: fit-content; 
-    border: 1px solid #ff004f; 
+    border: 1px solid  rgb(156, 185, 243); 
     padding: 14px 50px; 
     text-decoration: none; 
     border-radius: 10px; 
@@ -312,5 +312,5 @@ height: 100%;
     transition: background 0.5s;
 } 
 .btn:hover{ 
-    background: #ff004f;
+    background: rgb(156, 185, 243);
 }
