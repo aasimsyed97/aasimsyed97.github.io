@@ -30,7 +30,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    //background-image: url(../assets/logo.png);  
+    background-image: url(../assets/JAVA\ BAG.webp);  
     background-size: cover;
     background-position: center;
 
@@ -46,11 +46,14 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     position: fixed; 
-    top: 0;
+    top: 0; 
+    background: linear-gradient(rgba(0, 0, 0, 0.6),  rgb(156, 185, 243));
 }
 
 .logo {
-    width: 140px;
+    width: 140px; 
+    font-size: 25px;
+    color:rgb(197, 230, 134);
 }
 
 nav ul li {
@@ -81,7 +84,18 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-
+ @media (max-width: 640px){ 
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: fixed; 
+        top: 0; 
+        background: linear-gradient(rgba(0, 0, 0, 0.6),  rgb(156, 185, 243));
+ }
+}
 .header-text {
     margin-top: 20%;
     font-size: 30px;
@@ -208,7 +222,10 @@ header-text h1 {
     font-size: 30px;
 
 }
-
+ .services-list div img{ 
+    width: 100%; 
+    height: fit-content;
+ }
 .services-list div:hover {
     background: rgb(156, 185, 243);
     transform: translateY(-10px);
@@ -244,20 +261,20 @@ header-text h1 {
 
 .layer{
     width: 100%;
-    height: 0;
+    height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6),  rgb(156, 185, 243)); 
     border-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    transition: height 0.5s;
+    /* transition: height 0.5s; */
     font-size: 14px;
 }
 
