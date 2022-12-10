@@ -5,252 +5,350 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- style -->
-    <link rel="stylesheet" href="./CSS/style.css">
-
-    <title>Portfolio Website</title>
+    <title>Aasim Syed</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <div id="header">
-        <div class="container">
-            <nav>
-                <p class="logo"> Aasim Syed</p>
-                <ul>
-                    <li> <a href="#header">Home</a></li>
-                    <li> <a href="#about">About</a></li>
-                    <li> <a href="#services">Skills</a></li>
-                    <li> <a href="#portfolio">Portfolio</a></li>
-                    <li> <a href="#contact">Contact</a></li>
-                    <li> <a href="https://drive.google.com/file/d/1xv6Q_-oZSLFNF0kANra_ZRBR_EEIcfnr/view?usp=sharing"
-                            download>Resume</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p> Full Stack Web Developer</p>
-                <h1> Hi, I'm <span> Aasim Syed </span> </h1>
-                <div class="icons"> <a href="https://github.com/aasimsyed97"> <img src="./assets/github.png"
-                            alt="Github"></a>
-                    <a
-                        href="https://www.linkedin.com/in/aasim-syed-4066b4243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrLC5HQeTQ0eJSApycSQ%2BhQ%3D%3D">
-                        <img src="./assets/linked.png" alt="LinkedIn"></a>
-
-                </div>
-            </div>
+    <!-- navbar started -->
+    <div id="navbar">
+        <div style="margin-left: -18%;" id="name">
+            <img id="name-img" src="images/aasim.png" alt="Aasim Syed">
+        </div>
+        <div id="list" style="margin-right: -14%;">
+            <a class="list-item hover-underline-animation" href="#home-section">Home</a>
+            <a class="list-item hover-underline-animation" href="#about-section">About Me</a>
+            <a class="list-item hover-underline-animation" href="#skills-section">Skills</a>
+            <a class="list-item hover-underline-animation" href="#project">Projects</a>
+            <a class="list-item hover-underline-animation" href="#contact">Contact</a>
         </div>
     </div>
-    <!--About section  -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./assets/profilepic.jpg" alt="">
+    <div id="navham">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+
+        <ul class="nav" id="nav">
+            <li> <a onclick="removemenu()" class="anchor" href="#home-section">Home</a></li>
+            <li> <a onclick="removemenu()" class="anchor" href="#about-section">About Me</a></li>
+            <li> <a onclick="removemenu()" class="anchor" href="#skills-section">Skills</a></li>
+            <li> <a onclick="removemenu()" class="anchor" href="#project">Projects</a></li>
+            <li> <a onclick="removemenu()" class="anchor" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- navbar ended -->
+
+    <div id="main">
+
+
+        <!-- home-section started-->
+        <div style="margin-top: 5%;" id="home-section">
+            <div id="home-section-mini" style="width: 80%;">
+                <div id="home-left">
+                    <p> Hi, I am <span style="color: #828282;
+                  text-shadow: 1px 1px 1px var(--clr-tertiary); ">Aasim Syed</span></p>
+
+                    <span
+                        style="color: #828282; margin-bottom: 200vh; font-weight: 550; font-size: 2.8vw;margin-top: -50vh;">An
+                        Aspiring
+                        <span class='console-container'>
+                            <span id='text' style="text-shadow: 1px 1px 1px var(--clr-tertiary); "></span>
+                            <!-- <div class='console-underscore' id='console' style="color:#00ffff">&#95; </div> -->
+                        </span></span>
+
+
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title"> About Me</h1>
-                    <p> Hard-working, creative, and proactive Web Developer. Ability to translate business requirements
-                        into technical solutions backed by 1200+ hours of coding training. </p>
-                    <!-- <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
-                        <p class="tab-links" onclick="opentab('experiance')"> Experience</p>
-                        <p class="tab-links" onclick="opentab('eduction')"> Eduction</p>
-                    </div> -->
-                    <!-- <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li> <span> HTML</span> </li>
-                            <li> <span> CSS</span> </li>
-                            <li> <span> JavaScript</span> </li>
-                            <li> <span> JAVA</span> </li>
-                            <li> <span> SQL</span> </li>
-                            <li> <span> SprintBoot</span> </li>
-
-                        </ul>
-                    </div> -->
-                    <!-- <div class="tab-contents" id="experiance">
-                        <ul>
-                            <li> <span> Dec 2020 - April 2022</span><br> Vocational Trainer </li>
-
-
-                        </ul>
-                    </div> -->
-                    <!-- <div class="tab-contents" id="eduction">
-                        <ul>
-                            <li> <span> Full-Stack Web Development </span> <br>Masai School "Current"</li>
-                            <li> <span> BE (Civil Engg)</span><br> Sinhgad Academy Kondhwa Pune "2016-2019" </li>
-                            <li> <span> Diploma in CE</span><br> Govt. Polytechnic Amravati "2013-2016" </li>
-
-
-                        </ul>
-                    </div> -->
+                <div id="home-right">
+                    <img style="height: 80%;border-radius: 50%;" src="/images/profilepic.jpg" alt="nitya-nb">
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Skills -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title"> My Skills</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>HTML</h2>
-                    <img src="./assets/HTML.png" alt="CSS">
-                    <a href="">learn more</a>
-                </div>
-                <div>
-                    <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-                    <h2>CSS</h2>
-                    <img src="./assets/CSS.png" alt="CSS">
-                    <a href="">learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-list-check"></i>
-                    <!-- <i class="fa-regular fa-list-check"></i> -->
-                    <h2>JavaScript</h2>
-                    <img src="./assets/JS.jpg" alt="JavaScript">
-                    <a href="">learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>JAVA</h2>
-                    <img src="./assets/JAVA.png" alt="JAVA">
-                    <a href="">learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>MY SQL</h2>
-                    <img src="./assets/MYSQL.png" alt="MY SQL">
-                    <a href="">learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>HIBERNATE</h2>
-                    <img src="./assets/HIBERN.png" alt="HIBERNATE">
-                    <a href="">learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>SprintBoot</h2>
-                    <img src="./assets/SBRING.png" alt="SprintBoot">
-                    <a href="">learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>MAVEN</h2>
-                    <img src="./assets/MV.png" alt="MAVEN">
-                    <a href="">learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- poroject -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title"> My Project</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./assets/img1.jpg" alt="screenshot">
-                    <div class="layer">
-                        <h3>SugarCosmetic</h3>
-                        <p> About
-                            A fully functional clone of Cosmetic brand website, (Sugar-Cosmetics)</p>
-                        <div> <a href="https://github.com/aasimsyed97/SugarCosmetics01"> Github</a>
-                            <a href="https://startling-mooncake-efccdc.netlify.app/">Netlify</i></a>
-                        </div>
 
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./assets/img2.jpg" alt="screenshot">
-                    <div class="layer">
-                        <h3>LYST.com</h3>
-                        <p> A fully functional clone of fashion technology company, and premium shopping website.
-                            (LYST.COM)</p>
-                        <div> <a href="https://github.com/aasimsyed97/makeshift-protest-7826"> Github</a>
-                            <a href="https://joyful-lolly-c213c9.netlify.app/index.html">Netlify</i></a>
-                        </div>
 
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./assets/img6.jpg " alt="screenshot">
-                    <div class="layer">
-                        <h3>Monday.com</h3>
-                        <p> This is clone of Monday.com which provide services to other companies and help in grow
-                            business.</p>
-                        <div> <a href="https://github.com/raj74434/Monday.com"> Github</a>
-                            <a href="https://playful-smakager-31da9c.netlify.app/home_page/homepage/">Netlify</i></a>
+
+        </div>
+        <!-- home-section ended -->
+        <!-- about me started -->
+
+        <div id="about-section">
+            <div style="margin-left: 8%;" id="about-section-mini">
+                <div id="about-left">
+                    <div>About Me</div>
+                    <div>
+                        <p>My name is Aasim. I'm a Java Back-end Developer.
+                            Aspiring Java Backend Developer, proficient in Java, Spring Boot, SQL,Git, AWS, HTML, CSS,
+                            Javascript, Object-oriented, design And Self-motivated and curious, with a keen interest in
+                            building user-centric products. Looking forward to honing my skills in a challenging work
+                            environment.</p>
+                        <div id="resume-button">
+                            <button><a style="text-decoration: none;background: none;color:white"
+                                    href="./download/Aasim-Syed-Resume.pdf" download target="_blank"> Resume </a><i
+                                    style="color: white; background-color: #5a96d1;" class="fa fa-download"
+                                    aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>
-
-            </div>
-
-        </div>
-    </div>
-    </div>
-    <div class="calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-    </div>
-
-    <!--  Contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title"> Cotact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> sayedaasim555@gmail.com</p>
-                    <p> <i class="fa-solid fa-phone"></i> 8668778962</p>
-                    <div class="social-icons">
-                        <a href=""> <i class="fa-brands fa-facebook"></i></a>
-                        <a href=""> <i class="fa-brands fa-instagram"></i></a>
-                        <a href=""> <i class="fa-brands fa-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i> </a>
-                        <a href=""> <i class="fa-brands fa-discord"></i></a>
-                        <a href=""> <i class="fa-brands fa-github"></i></a>
-                        <a href=""> <i class="fa-brands fa-codepen"></i></a>
-                    </div>
-                    <a href="./assets/Aasim-Syed-Resume.pdf" download class="btn">Download CV</a>
+                <div id="about-right">
+                    <img src="./images/@2x-Blog-Multimodal-Learning-Animation.gif" style="width: 80%; margin-top:15%"
+                        alt="">
                 </div>
-                <!-- <div class="contact-right"> 
-                     <form> 
-                        <input type="text" name="Name" placeholder="YOur Name" required>
-                        <input type="email"  name="email" placeholder="Your Email" required> 
-                        <input type=" "> 
-                        <textarea name="Message"  rows="6" placeholder="YOur Message"> </textarea> 
-                        <button type="submit">Submit</button>
-                     </form>
+            </div>
+        </div>
+
+
+        <div id="skills-section">
+            <h3><span style="color: #5a96d1;">My</span>Skills</h3>
+            <div id="gap">
+                <h1><span style="color: #5a96d1">Front-end </span> Technologies</h1>
+                <div id="front">
+                    <div class="frontend">
+                        <div>
+                            <img src="images/html-5.png">
+                            <h4>HTML 5</h4>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div>
+                            <img src="images/css.png">
+                            <h4>CSS 3</h4>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div>
+                            <img src="images/java-script.png">
+                            <h4>JavaScript</h4>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div>
+                            <img src="images/netlify.png">
+                            <h4>Netlify</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gap1">
+                <h1><span style="color: #5a96d1">Back-end </span> Technologies</h1>
+                <div id="front1">
+                    <div class="frontend">
+                        <div>
+                            <img src="images/java.png">
+                            <h4>Java</h4>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div>
+                            <img src="images/mysql.png">
+                            <h4>MySql</h4>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div>
+                            <img src="images/spring-boot.png">
+                            <h4>SpringBoot</h4>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div>
+                            <img src="images/github.png">
+                            <h4>GitHub</h4>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div>
+                            <img src="images/hibernate-white.svg">
+                            <h4>Hibernate</h4>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div>
+                            <img src="images/postman-3521648.png">
+                            <h4>Postman</h4>
+                        </div>
+                    </div>
+                    <!-- <div class="frontend" id="none"></div>
+                  <div class="frontend" id="none"></div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------about me end  -->
+
+
+        <!-- github calender and graph -->
+
+        <div class="title reveal">
+            <a target="_blank" rel="noreferrer" id="cicin" href="https://github.com/aasimsyed97">
+                <p style="text-align: center; font-size: 200%; padding: 3%; text-underline-offset: none;">My Github
+                    Contributions</p>
+                <img width="100%" style="margin-bottom:20px;display: flex; padding: auto;" id="github-contributions"
+                    src="https://ghchart.rshah.org/aasimsyed97" href="https://github.com/aasimsyed97"
+                    alt="aasimsyed97's Github chart" />
+            </a>
+        </div>
+        <div class="statsBox">
+            <h3>GitHub Stats</h3>
+            <div style="display: flex; width: 100%;">
+                <div class="statsContainer">
+                    <div>
+                        <a href="https://github.com/aasimsyed97" target="_blank">
+                            <img align="center"
+                                src="https://github-readme-streak-stats.herokuapp.com/?user=aasimsyed97" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- <div class="stats-3">
+                    <p align="center">
+                        <a href="https://github.com/nitya-nb" target="_blank">
+                            <img align=""
+                                src="https://github-readme-stats.vercel.app/api/top-langs/?username=nitya-nb&bg_color=0D1117"
+                                alt="" />
+                        </a>
+                    </p>
                 </div> -->
+
+                <div class="stats-2" style="margin-right: 20%;">
+                    <p align="center">
+                        <a href="https://github.com/aasimsyed97/github-readme-stats" target="_blank">
+                            <img alt="Aasimsyed97 Github Stats"
+                                src="https://github-readme-stats.vercel.app/api?username=aasimsyed97&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117" />
+                        </a>
+                    </p>
+                </div>
+
             </div>
         </div>
+        <!-- <div class="graph-1">
+            <p align="center">
+                <a href="https://github.com/nitya-nb" target="_blank"><span>
+                        <img align="center"
+                            src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nitya-nb&theme=dracula&bg_color=0D1117" />
+                    </span></a>
+            </p>
+        </div> -->
+        <div class="graph">
+            <a href="https://github.com/aasimsyed97/github-readme-activity-graph" target="_blank">
+                <!-- <img alt="Aasimsyed97 Activity Graph"
+                    src="https://activity-graph.herokuapp.com/graph?username=aasimsyed97&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" /> -->
+            </a>
+        </div>
+
+        <!-- github calender and graph -->
+
+
+        <!------------project start-  -->
+        <div id="project">
+            <h3 style="text-align: center; padding-top: 5%; font-size: 3vw; color: white;"><span
+                    style="color: #5a96d1;">My</span>Projects</h3>
+            <div id="created">
+
+                <div class="work">
+                    <img src="images/lovoda-7-img.PNG">
+                    <div class="layer">
+                        <p style="font-size: 30px; line-height: normal;" id="h3">E-commerce Clone Website
+                            (SugarCosmetics)</p>
+                        <p id="p" style="font-size: 19px;">It is an E-Commerce clone website which deals in women's
+                            beauty products</p>
+                        <a href="https://startling-mooncake-efccdc.netlify.app" target="_blank">Live</a>
+                        <a href="https://github.com/aasimsyed97/SugarCosmetics01" target="_blank">GitHub</a>
+                    </div>
+                    <div>
+                        <div class="layer1">
+                            <p style="font-size: 30px; line-height: normal;" id="h3">E-commerce Clone Website
+                                (SugarCosmetics)</p>
+                            <p id="p" style="font-size: 19px;">It is an E-Commerce clone website which deals in women's
+                                beauty products</p>
+                            <a href="https://startling-mooncake-efccdc.netlify.app" target="_blank">Live</a>
+                            <a href="https://github.com/aasimsyed97/SugarCosmetics01" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ohs-img.png">
+                    <div class="layer">
+                        <p style="font-size: 30px; line-height: normal;" id="h3">Online Automated Auction System</p>
+                        <p id="p" style="font-size: 19px;">Core Java, SQL, JDBC using DAO Pattern</p>
+                        <a href="https://github.com/aasimsyed97/selfish-desire-8154" target="_blank">Live</a>
+                        <a href="https://github.com/aasimsyed97/selfish-desire-8154" target="_blank">GitHub</a>
+                    </div>
+                    <div>
+                        <div class="layer1">
+                            <p style="font-size: 30px; line-height: normal;" id="h3">Online Automated Auction System</p>
+                            <p id="p" style="font-size: 19px;">Core Java, SQL, JDBC using DAO Pattern</p>
+                            <a href="https://github.com/aasimsyed97/selfish-desire-8154" target="_blank">Live</a>
+                            <a href="https://github.com/aasimsyed97/selfish-desire-8154" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/backend11.png">
+                    <div class="layer">
+                        <p style="font-size: 30px; line-height: normal;" id="h3">LYST.COM</p>
+                        <p id="p" style="font-size: 19px;">A fully functional clone of fashion technology company, and
+                            premium shopping website. (LYST.COM)</p>
+                        <a href="https://joyful-lolly-c213c9.netlify.app/index.html" target="_blank">Live</a>
+                        <a href="https://github.com/aasimsyed97/makeshift-protest-7826" target="_blank">GitHub</a>
+                    </div>
+                    <div>
+                        <div class="layer1">
+                            <p style="font-size: 30px; line-height: normal;" id="h3">LYST.COM</p>
+                            <p id="p" style="font-size: 19px;">A fully functional clone of fashion technology company,
+                                and
+                                premium shopping website. (LYST.COM)</p>
+                            <a href="https://joyful-lolly-c213c9.netlify.app/index.html" target="_blank">Live</a>
+                            <a href="https://github.com/aasimsyed97/makeshift-protest-7826" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- --------------------------Contact Me----------------------------- -->
+
+        <div id="contact">
+            <div id="contactme">
+                <div id="firstcontact">
+                    <h1>Contact <span style="color:#5a96d1;">Me</span></h1>
+                    <div id="git"><a href="https://github.com/aasimsyed97"><img src="images/github.png"></a>
+                        <p>Aasim Syed</p>
+                    </div>
+                    <div id="tele"><img src="images/phone-icon.png">
+                        <p>+918668778962</p>
+                    </div>
+                    <div id="all">
+                        <a href="https://www.linkedin.com/in/aasim-syed-4066b4243/" target="_blank"> <img
+                                src="images/linkedin.png" alt=""></a>
+                    </div>
+                    <button>Download CV</button>
+                </div>
+                <!-- <div id="secondcontact">
+            <form action="https://formsubmit.co/nityabaranwal1@gmail.com" method="post" target="_blank" rel="noopener noreferrer">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_autoresponse" value="Thank you for reaching me.I will contact you soon...">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_next" value="">
+                <input type="text" name="name" placeholder=" Name" required="">
+                <input type="email" name="email" placeholder=" Email" required="">
+                <input id="msg" name="Message" rows="6" placeholder=" Message"></input>
+                <button type="submit" id="contact-button">SEND</button>
+            </form>
+          
+        </div> -->
+            </div>
+        </div>
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-
-    <!-- Include the library. -->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-    <!-- Prepare a container for your calendar. -->
-
-
-    <script>
-        GitHubCalendar(".calendar", "aasimsyed97");
-        // or enable responsive functionality
-        GitHubCalendar(".calendar", "aasimsyed97", { responsive: true });
-    </script>
+    </div>
 
 
 </body>
 
 </html>
+<script src="/scripts/index.js"></script>
