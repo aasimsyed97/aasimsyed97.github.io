@@ -313,6 +313,9 @@
     border-radius: 10px;
     width: 22.5%;
     margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    
+     padding: 10px;
   }
   .work img{
     width:100%;
@@ -356,6 +359,7 @@
     padding: 0px 10%;
     width: 80%;
     background: transparent;
+    overflow: hidden;
     /* border: 1px solid black; */
   }
   
@@ -375,6 +379,7 @@
    .layer1 {
     width: 100%;
     height: 100%;
+    
   } 
 
   .layer1 #h3 {
@@ -392,6 +397,7 @@
     background: transparent;
     margin: 20px 0px;
     text-align: center;
+    overflow: hidden;
     /* border: 1px solid black; */
   }
   
@@ -407,7 +413,7 @@
     border-radius: 10px;
     text-align: center;
     padding: 0 3% 0 3%;
-    margin: 10% 10%;
+    margin-left: 25%;
     
   } 
  
@@ -415,9 +421,10 @@
     background-color: #5a96d1;
     color: white;
     border: 4px solid white;
+    overflow: hidden;
   }
   .work:hover img {
-    transform: scale(0.5);
+    transform: scale(0.75);
     opacity: 0.6;
   }
   .work:hover .layer {
