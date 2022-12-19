@@ -327,7 +327,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 35px;
-  width: 85%;
+  width: 80%;
   margin: auto;
   margin-top: 80px;
 }
@@ -483,7 +483,7 @@
   margin: auto;
   height: 550px;
   display: grid;
-overflow: hidden;
+  overflow: hidden;
   grid-template-columns: 35% 54%;
   justify-content: space-between;
   color: rgb(183, 183, 183)
