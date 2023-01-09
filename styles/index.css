@@ -48,7 +48,7 @@
 
 #list .list-item {
   /* border: 1px solid purple; */
-  font-size: 2vw;
+  font-size: 1.5vw;
   /* color: #ff521b; */
   color: #5a96d1;
   /* color: #61a5c2; */
@@ -511,7 +511,7 @@
 }
 
 #git {
-  margin-top: 42px;
+  margin-top: 42px; 
 }
 
 #git,
@@ -519,7 +519,8 @@
 #all {
   display: flex;
   margin-bottom: 27px;
-  align-items: flex-end;
+  align-items: flex-end; 
+  gap : 15px;
 }
 
 #firstcontact p {
