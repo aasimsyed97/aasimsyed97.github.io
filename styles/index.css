@@ -110,7 +110,7 @@
 }
 
 #home-section-mini {
-   border: 1px solid purple; 
+   /* border: 1px solid purple;  */
   width: 95%;
   /* display: grid;
   grid-template-columns: 5fr 3fr; */ 
@@ -121,7 +121,7 @@
 
 #home-left {
   height: 70vh;
-  border: 1px solid red; 
+  /* border: 1px solid red;  */
   width: 85%;
  
   margin: 0px 10px; 
@@ -139,7 +139,7 @@
   width: 80%;
 margin-right: -20%;
   padding: 0%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 } 
 #home-right img {
   height: 85%; 
