@@ -110,16 +110,22 @@
 }
 
 #home-section-mini {
-  /* border: 1px solid purple; */
-  width: 90%;
-  display: grid;
-  grid-template-columns: 5fr 3fr;
-  margin: auto;
+   border: 1px solid purple; 
+  width: 95%;
+  /* display: grid;
+  grid-template-columns: 5fr 3fr; */ 
+  display: flex;
+  margin: auto; 
+ 
 }
 
 #home-left {
   height: 70vh;
-  /* border: 1px solid red; */
+  border: 1px solid red; 
+  width: 85%;
+ 
+  margin: 0px 10px; 
+  padding: 0%;
 }
 
 #home-left p {
@@ -130,7 +136,15 @@
 
 #home-right {
   height: 70vh;
-  /* border: 1px solid red; */
+  width: 80%;
+margin-right: -20%;
+  padding: 0%;
+  border: 1px solid red;
+} 
+#home-right img {
+  height: 85%; 
+  width:55% ;
+  border-radius: 50%;
 }
 
 
@@ -305,8 +319,10 @@
   background: none;
 }
 
-/* ------  my skills ended --------- */
+/* ------  my skills ended --------- */ 
 
+/* --------Github --------- */ 
+/* ------  Github ended --------- */ 
 
 /* --------my  projects --------- */
 
