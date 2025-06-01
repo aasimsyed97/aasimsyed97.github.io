@@ -1,400 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aasim Syed</title>
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aasim Syed | Resume</title>
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
-
 <body>
-
-    <!-- navbar started -->
-    <div id="navbar">
-        <div style="margin-left: -18%;" id="name">
-            <a href="#home-section">
-                <img id="name-img" src="./images/aasim.png" alt="Aasim Syed">
-            </a>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Aasim Syed</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-controls">
+        <button id="theme-toggle" title="Toggle Day/Night">&#9788;</button>
+        <select id="accent-select" title="Accent Color">
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="section-full">
+      <div class="container">
+       <div class="home-content-wrapper">
+  <img src="./images/profilepic.jpg" alt="Aasim Syed" class="profile-pic">
+  <div class="home-details">
+    <h1 class="home-title">Hi, I'm <span class="accent">Aasim Syed</span></h1>
+    <p id="hero-role"></p>
+    <p class="about-desc">
+      Passionate Java Developer with expertise in scalable, robust solutions. Experienced in Java, Spring Boot, Hibernate, SQL/NoSQL, Docker, and modern front-end frameworks. I love solving problems and building impactful products.
+    </p>
+    <a href="./download/Aasim-Syed-Resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+</div>
         </div>
-        <div id="list" style="margin-right: -14%;">
-            <a class="list-item hover-underline-animation" href="#home-section">Home</a>
-            <a class="list-item hover-underline-animation" href="#about-section">About Me</a>
-            <a class="list-item hover-underline-animation" href="#skills-section">Skills</a>
-            <a class="list-item hover-underline-animation" href="#project">Projects</a>
-            <a class="list-item hover-underline-animation" href="#contact">Contact</a>
-            <a class="list-item hover-underline-animation"
-                href="https://drive.google.com/file/d/1xv6Q_-oZSLFNF0kANra_ZRBR_EEIcfnr/view?usp=sharing" download
-                target="_blank"> Resume</a>
+        
+      </div>
+    </section>
+    <section id="skills" class="section-full">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-category">
+          <h3 class="skills-subtitle">Front End</h3>
+          <div id="skills-list-frontend" class="skills-grid"></div>
         </div>
-    </div>
-    <div id="navham">
-        <div id="menu" onclick="onClickMenu()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
+        <div class="skills-category">
+          <h3 class="skills-subtitle">Back End</h3>
+          <div id="skills-list-backend" class="skills-grid"></div>
         </div>
-
-        <ul class="nav" id="nav">
-            <li> <a onclick="removemenu()" class="anchor" href="#home-section">Home</a></li>
-            <li> <a onclick="removemenu()" class="anchor" href="#about-section">About Me</a></li>
-            <li> <a onclick="removemenu()" class="anchor" href="#skills-section">Skills</a></li>
-            <li> <a onclick="removemenu()" class="anchor" href="#project">Projects</a></li>
-            <li> <a onclick="removemenu()" class="anchor" href="#contact">Contact</a></li>
-            <li> <a onclick="removemenu()" class="anchor"
-                    href="https://drive.google.com/file/d/1xv6Q_-oZSLFNF0kANra_ZRBR_EEIcfnr/view?usp=sharing" download
-                    target="_blank">Resume</a></li>
-        </ul>
-    </div>
-
-    <!-- navbar ended -->
-
-    <div id="main">
-
-
-        <!-- home-section started-->
-        <div style="margin-top: 5%;" id="home-section">
-            <div id="home-section-mini">
-                <div id="home-left">
-                    <p> Hi, I am <span style="color: #828282;
-                  text-shadow: 1px 1px 1px var(--clr-tertiary); ">Aasim Syed</span></p>
-
-                    <span
-                        style="color: #828282; margin-bottom: 200vh; font-weight: 550; font-size: 2.8vw;margin-top: -50vh;">An
-                        Aspiring
-                        <span class='console-container'>
-                            <span id='text' style="text-shadow: 1px 1px 1px var(--clr-tertiary); "></span>
-                            <!-- <div class='console-underscore' id='console' style="color:#00ffff">&#95; </div> -->
-                        </span></span>
-
-
-                </div>
-                <div id="home-right">
-                    <img src="./images/profilepic.jpg" alt="Aasim Syed">
-                </div>
-            </div>
-
-
-
+        <div class="skills-category">
+          <h3 class="skills-subtitle">Tools & Technologies</h3>
+          <div id="skills-list-tools" class="skills-grid"></div>
         </div>
-        <!-- home-section ended -->
-        <!-- about me started -->
-
-        <div id="about-section">
-            <div style="margin-left: 8%;" id="about-section-mini">
-                <div id="about-left">
-                    <div>About Me</div>
-                    <div>
-                        <p>My name is Aasim Syed. I'm a Java Back-end Developer.
-                            Aspiring Java Backend Developer, proficient in Java, Spring Boot, SQL,Git, AWS, HTML, CSS,
-                            Javascript, Object-oriented, design And Self-motivated and curious, with a keen interest in
-                            building user-centric products. Looking forward to honing my skills in a challenging work
-                            environment.</p>
-                        <div id="resume-button">
-                            <button><a style="text-decoration: none;background: none;color:white"
-                                    href="./download/Aasim-Syed-Resume.pdf" download target="_blank"> Resume </a><i
-                                    style="color: white; background-color: #5a96d1;" class="fa fa-download"
-                                    aria-hidden="true"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div id="about-right">
-                    <img src="./images/@2x-Blog-Multimodal-Learning-Animation.gif" style="width: 80%; margin-top:15%"
-                        alt="">
-                </div>
-            </div>
-        </div>
-
-
-        <div id="skills-section">
-            <h3><span style="color: #5a96d1;">My</span>Skills & Tools</h3>
-            <div id="gap">
-                <h1><span style="color: #5a96d1">Front-end </span> Technologies</h1>
-                <div id="front">
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/html-5.png">
-                            <h4>HTML 5</h4>
-                        </div>
-                    </div>
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/css.png">
-                            <h4>CSS 3</h4>
-                        </div>
-                    </div>
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/java-script.png">
-                            <h4>JavaScript</h4>
-                        </div>
-                    </div>
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/netlify.png">
-                            <h4>Netlify</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="gap1">
-                <h1><span style="color: #5a96d1">Back-end </span> Technologies</h1>
-                <div id="front1">
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/java.png">
-                            <h4>Java</h4>
-                        </div>
-                    </div>
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/mysql.png">
-                            <h4>MySql</h4>
-                        </div>
-                    </div>
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/spring-boot.png">
-                            <h4>SpringBoot</h4>
-                        </div>
-                    </div>
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/github.png">
-                            <h4>GitHub</h4>
-                        </div>
-                    </div>
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/hibernate-white.svg">
-                            <h4>Hibernate</h4>
-                        </div>
-                    </div>
-                    <div class="frontend">
-                        <div>
-                            <img src="./images/postman-3521648.png">
-                            <h4>Postman</h4>
-                        </div>
-                    </div>
-                    <!-- <div class="frontend" id="none"></div>
-                  <div class="frontend" id="none"></div> -->
-                </div>
-            </div>
-        </div>
-
-        <!-- ---------about me end  -->
-
-
-        <!-- github calender and graph -->
-
-        <div class="title reveal">
-            <a target="_blank" rel="noreferrer" id="cicin" href="https://github.com/aasimsyed97">
-                <p style="text-align: center; font-size: 200%; padding: 3%; text-underline-offset: none;">My Github
-                    Contributions</p>
-                <img width="100%" style="margin-bottom:20px;display: flex; padding: auto;" id="github-contributions"
-                    src="https://ghchart.rshah.org/aasimsyed97" href="https://github.com/aasimsyed97"
-                    alt="aasimsyed97's Github chart" />
-            </a>
-        </div>
-        <div class="statsBox">
-            <h3>GitHub Stats</h3>
-            <div style="display: flex; width: 100%; ">
-                <div class="statsContainer">
-                    <div>
-                        <a href="https://github.com/aasimsyed97" target="_blank">
-                            <img align="center"
-                                src="https://github-readme-streak-stats.herokuapp.com/?user=aasimsyed97" />
-                        </a>
-                    </div>
-                </div>
-
-                <!-- <div class="stats-3">
-                    <p align="center">
-                        <a href="https://github.com/aasimsyed97" target="_blank">
-                            <img align=""
-                                src="https://github-readme-stats.vercel.app/api/top-langs/?username=aasimsyed97&bg_color=0D1117"
-                                alt="" />
-                        </a>
-                    </p>
-                </div> -->
-
-                <div class="stats-2" style="margin-right: 20%;">
-                    <p align="center">
-                        <a href="https://github.com/aasimsyed97/github-readme-stats" target="_blank">
-                            <img alt="Aasimsyed97 Github Stats"
-                                src="https://github-readme-stats.vercel.app/api?username=aasimsyed97&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117" />
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <!-- <div class="graph-1">
-            <p align="center">
-                <a href="https://github.com/aasimsyed97" target="_blank"><span>
-                        <img align="center"
-                            src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aasimsyed97&theme=dracula&bg_color=0D1117" />
-                    </span></a>
-            </p>
-        </div> -->
-        <div class="graph">
-            <a href="https://github.com/aasimsyed97/github-readme-activity-graph" target="_blank">
-                <!-- <img alt="Aasimsyed97 Activity Graph"
-                    src="https://activity-graph.herokuapp.com/graph?username=aasimsyed97&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" /> -->
-            </a>
-        </div>
-
-        <!-- github calender and graph -->
-
-
-        <!------------project start-  -->
-        <div id="project">
-            <h3 style="text-align: center; padding-top: 5%; font-size: 3vw; color: white;"><span
-                    style="color: #5a96d1;">My</span>Projects</h3>
-            <div id="created">
-
-                <div class="work">
-                    <img src="./images/Product-collage_1.jpg">
-                    <!-- <div class="layer">
-                        <p style="font-size: 30px; line-height: normal;" id="h3">E-commerce Clone Website
-                            (SugarCosmetics)</p>
-                        <p id="p" style="font-size: 19px;">It is an E-Commerce clone website which deals in women's
-                            beauty products</p>
-                        <a href="https://startling-mooncake-efccdc.netlify.app" target="_blank">Live</a>
-                        <a href="https://github.com/aasimsyed97/SugarCosmetics01" target="_blank">GitHub</a>
-                    </div> -->
-                    <div>
-                        <div class="layer1">
-                            <p style="font-size: 30px; line-height: normal;" id="h3">E-commerce Clone Website
-                                (SugarCosmetics)</p>
-                            <p id="p" style="font-size: 19px;">It is an E-Commerce clone website which deals in women's
-                                beauty products</p>
-                            <p> TECH-STACK:- HTML | CSS | JavaScript</p>
-                            <a href="https://startling-mooncake-efccdc.netlify.app" target="_blank">Demo</a>
-                            <a href="https://github.com/aasimsyed97/SugarCosmetics01" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./images/auction4.png">
-                    <!-- <div class="layer">
-                        <p style="font-size: 30px; line-height: normal;" id="h3">Online Automated Auction System</p>
-                        <p id="p" style="font-size: 19px;">Automated Auction System (AAS) is a computer system used
-                            developed to auction and creating bid and sell products. </p>
-                        <a href="https://github.com/aasimsyed97/selfish-desire-8154" target="_blank">Live</a>
-                        <a href="https://github.com/aasimsyed97/selfish-desire-8154" target="_blank">GitHub</a>
-                    </div> -->
-                    <div>
-                        <div class="layer1">
-                            <p style="font-size: 30px; line-height: normal;" id="h3">Online Automated Auction System
-                                (Syed_Auctions)</p>
-                            <p id="p" style="font-size: 19px;">Automated Auction System (AAS) is a computer system used
-                                developed to auction and creating bid and sell products.</p>
-                            <p> TECH-STACK:- JAVA | MySQL | JDBC</p>
-                            <a href="https://github.com/aasimsyed97/selfish-desire-8154" target="_blank">Demo</a>
-                            <a href="https://github.com/aasimsyed97/selfish-desire-8154" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./images/lyst6.webp">
-                    <!-- <div class="layer">
-                        <p style="font-size: 30px; line-height: normal;" id="h3">E-commerce Clone Website
-                            (LYST.COM)</p>
-                        <p id="p" style="font-size: 19px;">A fully functional clone of fashion technology company's,
-                            premium shopping website.</p>
-                        <a href="https://joyful-lolly-c213c9.netlify.app/index.html" target="_blank">Live</a>
-                        <a href="https://github.com/aasimsyed97/makeshift-protest-7826" target="_blank">GitHub</a>
-                    </div> -->
-                    <div>
-                        <div class="layer1">
-                            <p style="font-size: 30px; line-height: normal;" id="h3">E-commerce Clone Website
-                                (LYST.COM)</p>
-                            <p id="p" style="font-size: 19px;">A fully functional clone of fashion technology company's,
-                                premium shopping website.</p>
-                            <p> TECH-STACK:- HTML | CSS | JavaScript | ES6 </p>
-                            <a href="https://joyful-lolly-c213c9.netlify.app/index.html" target="_blank">Demo</a>
-                            <a href="https://github.com/aasimsyed97/makeshift-protest-7826" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="work">
-                    <img src="./images/food5.webp">
-                    <!-- <div class="layer">
-                        <p style="font-size: 30px; line-height: normal;" id="h3">E-commerce Clone Website
-                            (LYST.COM)</p>
-                        <p id="p" style="font-size: 19px;">A fully functional clone of fashion technology company's,
-                            premium shopping website.</p>
-                        <a href="https://joyful-lolly-c213c9.netlify.app/index.html" target="_blank">Live</a>
-                        <a href="https://github.com/aasimsyed97/makeshift-protest-7826" target="_blank">GitHub</a>
-                    </div> -->
-                    <div>
-                        <div class="layer1">
-                            <p style="font-size: 30px; line-height: normal;" id="h3">Food Delevery Appp
-                                (FOODU.COM)</p>
-                            <p id="p" style="font-size: 19px;">Java Backend project for creating api for online food
-                                delivery app.</p>
-                            <p> TECH-STACK:- JAVA | MySQL | Hibernate | SpringBoot</p>
-                            <a href="https://drive.google.com/file/d/1AY7rmxxM6qQD9Gr0sR4ojEzUgRdxFBVU/view?usp=share_link"
-                                target="_blank">Demo</a>
-                            <a href="https://github.com/PratyayChakraborty/holy-food-9262" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <!-- --------------------------Contact Me----------------------------- -->
-
-        <div id="contact">
-            <div id="contactme">
-                <div id="firstcontact">
-                    <h1>Contact <span style="color:#5a96d1;">Me</span></h1>
-                    <div id="git"><a href="https://github.com/aasimsyed97"><img src="images/github.png"></a>
-                        <a href="https://www.linkedin.com/in/aasim-syed-4066b4243/" target="_blank"> <img
-                                src="images/linkedin.png" alt=""></a>
-                        <p>Aasim Syed</p>
-                    </div>
-                    <div id="tele"><img src="images/phone-icon.png">
-                        <p>+918668778962</p>
-                    </div>
-                    <div id="tele"><img src="./images/gmail.webp">
-                        <p>sayedaasim555@gmail.com</p>
-                    </div>
-                    <div id="all">
-                        <!-- <a href="https://www.linkedin.com/in/aasim-syed-4066b4243/" target="_blank"> <img
-                                src="images/linkedin.png" alt=""></a> 
-                                <p>Aasim Syed</p> -->
-                    </div>
-                    <button> Download CV </button>
-                </div>
-                <!-- <div id="secondcontact">
-            <form action="https://formsubmit.co/nityabaranwal1@gmail.com" method="post" target="_blank" rel="noopener noreferrer">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_autoresponse" value="Thank you for reaching me.I will contact you soon...">
-                <input type="hidden" name="_subject" value="New submission!">
-                <input type="hidden" name="_next" value="">
-                <input type="text" name="name" placeholder=" Name" required="">
-                <input type="email" name="email" placeholder=" Email" required="">
-                <input id="msg" name="Message" rows="6" placeholder=" Message"></input>
-                <button type="submit" id="contact-button">SEND</button>
-            </form>
-          
-        </div> -->
-            </div>
-        </div>
-
-    </div>
-
-    </div>
-
-
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="projects-list" class="projects-grid"></div>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <a href="mailto:sayedaasim555@gmail.com" class="contact-link">sayedaasim555@gmail.com</a>
+        <a href="tel:+918668778962" class="contact-link">+91 8668778962</a>
+        <a href="https://github.com/aasimsyed97" target="_blank" class="contact-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/aasim-syed-4066b4243/" target="_blank" class="contact-link">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Aasim Syed</p>
+  </footer>
+  <script src="./scripts/index.js"></script>
 </body>
-
 </html>
-<script src="./scripts/index.js"></script>
