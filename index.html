@@ -11,7 +11,7 @@
     <nav class="navbar">
       <div class="logo">Aasim Syed</div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="#home">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -22,6 +22,7 @@
           <option value="green">Green</option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
+          <option value="pink">Pink</option>
         </select>
       </div>
     </nav>
@@ -61,9 +62,18 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div id="projects-list" class="projects-grid"></div>
+    <section id="projects" class="section-full">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-category">
+          <h3 class="projects-subtitle">Front End Projects</h3>
+          <div id="projects-list-frontend" class="projects-grid"></div>
+        </div>
+        <div class="projects-category">
+          <h3 class="projects-subtitle">Back End Projects</h3>
+          <div id="projects-list-backend" class="projects-grid"></div>
+        </div>
+      </div>
     </section>
     <section id="contact" class="section">
       <h2>Contact</h2>
