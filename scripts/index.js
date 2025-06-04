@@ -123,11 +123,30 @@ themeToggle.addEventListener("click", () => {
 
 // ====== Accent Color Switcher ======
 const accentSelect = document.getElementById("accent-select");
+
+// Apply the selected accent class
 function updateAccent() {
-  document.body.classList.remove("accent-green", "accent-red", "accent-blue");
-  document.body.classList.add("accent-" + accentSelect.value);
+  const body = document.body;
+  const accent = accentSelect.value;
+
+  body.classList.remove(
+    "accent-green",
+    "accent-red",
+    "accent-blue",
+    "accent-pink",
+    "accent-yellow",
+    "accent-purple",
+    "accent-orange",
+    "accent-teal",
+    "accent-gray",
+    "accent-black"
+  );
+
+  body.classList.add(`accent-${accent}`); // Add the selected accent class
 }
+
 accentSelect.addEventListener("change", updateAccent);
+accentSelect.value = "black"; // Set black as the default selected accent
 updateAccent();
 
 // ====== Footer Year ======
