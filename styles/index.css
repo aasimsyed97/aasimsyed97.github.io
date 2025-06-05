@@ -358,7 +358,8 @@ body.night .theme-controls button:hover, body.night .theme-controls select:hover
 /* Container for side margins and centering */
 .container {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1750px;
+  height: 100vh;
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;

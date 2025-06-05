@@ -4,13 +4,17 @@ const skills = {
     { name: "HTML5", icon: "./images/html-5.png" },
     { name: "CSS3", icon: "./images/css.png" },
     { name: "JavaScript", icon: "./images/java-script.png" },
-    { name: "Netlify", icon: "./images/netlify.png" }
+    { name: "Netlify", icon: "./images/netlify.png" },
+    { name: "Angular", icon: "./images/angular-brands-solid.svg" }
   ],
   backend: [
     { name: "Java", icon: "./images/java.png" },
     { name: "MySQL", icon: "./images/mysql.png" },
     { name: "Spring Boot", icon: "./images/spring-boot.png" },
-    { name: "Hibernate", icon: "./images/hibernate-white.svg" }
+    { name: "Hibernate", icon: "./images/hibernate-white.svg" },
+    { name: "gRPC", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grpc/grpc-original.svg" },
+    { name: "RabbitMQ", icon: "./images/rabbitmq.svg" },
+    {  name:"Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" }
   ],
   tools: [
     { name: "GitHub", icon: "./images/github.png" },
