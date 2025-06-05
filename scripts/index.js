@@ -117,8 +117,12 @@ setInterval(animateRole, 2000);
 // ====== Theme Toggle ======
 const themeToggle = document.getElementById("theme-toggle");
 themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("night");
-  themeToggle.innerHTML = document.body.classList.contains("night") ? "&#9790;" : "&#9788;";
+  const body = document.body;
+  body.classList.toggle("night");
+  themeToggle.innerHTML = body.classList.contains("night") ? "&#9790;" : "&#9788;";
+
+  // Ensure accent logic is updated when toggling night mode
+  updateAccent();
 });
 
 // ====== Accent Color Switcher ======
@@ -143,6 +147,13 @@ function updateAccent() {
   );
 
   body.classList.add(`accent-${accent}`); // Add the selected accent class
+
+  // Handle text color for night mode and black accent
+  if (body.classList.contains("night") && accent === "black") {
+    body.classList.add("accent-black");
+  } else {
+    body.classList.remove("accent-black");
+  }
 }
 
 accentSelect.addEventListener("change", updateAccent);

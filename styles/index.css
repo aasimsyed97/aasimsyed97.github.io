@@ -30,7 +30,8 @@ body.night {
 }
 
 body.night.accent-black {
-  --text: #fff;
+  --text: #fff; /* Ensure all text is white */
+  --btn-bg: #333;
 }
 
 /* Removed duplicate rules */
@@ -49,12 +50,13 @@ body {
 }
 
 .section-full {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  padding: 0;
+  padding: 3rem 1rem;
   background: var(--section-bg);
+}
+
+/* Ensure text color is white for all elements in night mode with black accent */
+body.night.accent-black * {
+  color: var(--text) !important;
 }
 
 /* Navbar */
@@ -106,6 +108,34 @@ body {
   display: flex;
   gap: 1rem; /* Add spacing between buttons */
   margin-right: 4rem; /* Add space from the right corner */
+}
+
+/* Updated style for theme controls */
+.theme-controls button, .theme-controls select {
+  color: var(--accent);
+  background: var(--btn); 
+  border-radius: 8px;
+  padding: 0.8rem 0.8rem;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+}
+
+.theme-controls button:hover, .theme-controls select:hover {
+  color: var(--btn-text);
+  background: var(--accent);
+  
+}
+
+/* Ensure consistent styling for theme controls in night mode */
+body.night .theme-controls button, body.night .theme-controls select {
+  background: var(--btn);
+  color: var(--accent);
+}
+
+body.night .theme-controls button:hover, body.night .theme-controls select:hover {
+  background: var(--accent);
+  color: var(--btn);
 }
 
 /* Hero Section */
@@ -312,7 +342,7 @@ body {
 /* Updated style for buttons and links */
 .btn, .project-links a {
   color: var(--accent);
-  background: var(--btn-text); 
+  background: var(--btn); 
   border-radius: 6px;
   padding: 0.4rem 0.8rem; 
   text-decoration: none;
@@ -380,7 +410,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  color: var(--text);
+  color: var(--accent);
 }
 .home-desc {
   font-size: 1.1rem;
