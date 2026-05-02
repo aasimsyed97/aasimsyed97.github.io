@@ -1,0 +1,59 @@
+<div class="animate-in fade-in slide-in-from-bottom-4 duration-500">
+  <div class="space-y-8">
+    <div class="space-y-2">
+      <h2 class="text-3xl font-bold text-white tracking-tight">Featured Work</h2>
+      <p class="text-slate-400">Selected projects showcasing my expertise in building scalable systems.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      @for (project of projects; track project.title) {
+        <div class="group flex flex-col justify-between bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6 md:p-8 hover:bg-slate-800/60 transition-all duration-300">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between">
+              <div class="p-3 bg-sky-500/10 rounded-lg text-sky-400">
+                <lucide-icon [img]="FolderGit2Icon" class="w-6 h-6"></lucide-icon>
+              </div>
+              <div class="flex gap-3">
+                @if (project.github) {
+                  <a [href]="project.github" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">
+                    <lucide-icon [img]="GithubIcon" class="w-5 h-5"></lucide-icon>
+                  </a>
+                }
+                @if (project.link) {
+                  <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">
+                    <lucide-icon [img]="ExternalLinkIcon" class="w-5 h-5"></lucide-icon>
+                  </a>
+                }
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold text-slate-200 group-hover:text-sky-400 transition-colors">
+                {{ project.title }}
+              </h3>
+              <p class="mt-2 text-slate-400 leading-relaxed text-sm md:text-base">
+                {{ project.description }}
+              </p>
+            </div>
+
+            <div class="bg-slate-900/50 rounded-lg p-4 border border-slate-700/50">
+              <p class="text-sm text-slate-300 italic">
+                "{{ project.insight }}"
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-auto">
+            <div class="flex flex-wrap gap-2">
+              @for (tag of project.tags; track tag) {
+                <span class="text-xs font-mono text-sky-300 bg-sky-500/10 px-2.5 py-1 rounded">
+                  {{ tag }}
+                </span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

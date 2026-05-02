@@ -1,0 +1,47 @@
+<div class="flex flex-col justify-center min-h-[calc(100vh-8rem)] animate-in fade-in slide-in-from-bottom-4 duration-700">
+  <div class="space-y-6 max-w-3xl">
+    <div class="space-y-2">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white">
+        {{ profile.name }}
+      </h1>
+      <h2 class="text-xl md:text-2xl font-medium text-sky-400">
+        {{ profile.role }}
+      </h2>
+    </div>
+    
+    <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
+      {{ profile.intro }}
+    </p>
+
+    <div class="flex flex-wrap gap-3 pt-4">
+      @for (highlight of highlights; track highlight) {
+        <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-sm text-slate-300">
+          {{ highlight }}
+        </span>
+      }
+    </div>
+
+    <div class="flex items-center gap-4 pt-8">
+      <button
+        (click)="onNavigate('Projects')"
+        class="flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-slate-900 px-6 py-3 rounded-lg font-semibold transition-colors"
+      >
+        <lucide-icon [img]="CodeIcon" class="w-5 h-5"></lucide-icon>
+        View Projects
+      </button>
+      <button
+        (click)="onNavigate('Skills')"
+        class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors border border-slate-700 hover:border-slate-600"
+      >
+        View Skills
+        <lucide-icon [img]="ChevronRightIcon" class="w-5 h-5"></lucide-icon>
+      </button>
+    </div>
+
+    <div class="pt-12">
+      <div class="inline-block font-mono text-sm text-slate-500 bg-slate-900/50 p-3 rounded-lg border border-slate-800/50">
+        {{ terminalText }}<span class="animate-blink">_</span>
+      </div>
+    </div>
+  </div>
+</div>

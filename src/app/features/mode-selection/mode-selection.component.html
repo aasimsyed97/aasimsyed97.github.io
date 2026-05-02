@@ -1,0 +1,36 @@
+<div class="flex flex-col items-center justify-center min-h-screen bg-slate-900 text-slate-200 animate-in fade-in duration-1000">
+  <div class="text-center space-y-8 max-w-lg p-8 rounded-2xl bg-slate-800/50 border border-slate-700/50 backdrop-blur-sm shadow-2xl">
+    <div class="space-y-2">
+      <h1 class="text-3xl font-bold tracking-tight text-white">Welcome to {{ profileName }}'s Portfolio</h1>
+      <p class="text-slate-400">Choose your experience</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <button
+        (click)="onSelectMode('gui')"
+        class="group flex flex-col items-center gap-3 p-6 rounded-xl border border-sky-500/30 bg-sky-500/10 hover:bg-sky-500/20 transition-all duration-300"
+      >
+        <lucide-icon [img]="MonitorIcon" class="w-10 h-10 text-sky-400 group-hover:scale-110 transition-transform"></lucide-icon>
+        <div class="space-y-1">
+          <span class="block font-semibold text-sky-300">GUI Mode</span>
+          <span class="text-xs text-slate-400">Standard Experience</span>
+        </div>
+      </button>
+
+      <button
+        (click)="onSelectMode('terminal')"
+        class="group flex flex-col items-center gap-3 p-6 rounded-xl border border-slate-700 hover:border-slate-500 bg-slate-800 hover:bg-slate-700 transition-all duration-300"
+      >
+        <lucide-icon [img]="TerminalIcon" class="w-10 h-10 text-slate-400 group-hover:text-slate-300 group-hover:scale-110 transition-all"></lucide-icon>
+        <div class="space-y-1">
+          <span class="block font-semibold text-slate-300">Terminal Mode</span>
+          <span class="text-xs text-slate-500">Developer Experience</span>
+        </div>
+      </button>
+    </div>
+
+    <div class="text-sm text-slate-500 pt-4">
+      Auto-selecting GUI Mode in <span class="font-mono text-sky-400">{{ timeLeft }}s</span>...
+    </div>
+  </div>
+</div>

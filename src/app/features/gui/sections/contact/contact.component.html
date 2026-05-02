@@ -1,0 +1,54 @@
+<div class="animate-in fade-in slide-in-from-bottom-4 duration-500">
+  <div class="max-w-3xl mx-auto text-center space-y-12">
+    <div class="space-y-4">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Let's Connect</h2>
+      <p class="text-lg text-slate-400 max-w-xl mx-auto">
+        I'm currently open to new opportunities. Whether you have a question, a project proposal, or just want to say hi, I'll try my best to get back to you!
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+      <a [href]="'mailto:' + profile.email" 
+         class="group flex items-center gap-4 p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 hover:bg-slate-800 hover:border-sky-500/50 transition-all duration-300">
+        <div class="p-3 bg-sky-500/10 rounded-xl text-sky-400 group-hover:scale-110 transition-transform">
+          <lucide-icon [img]="MailIcon" class="w-6 h-6"></lucide-icon>
+        </div>
+        <div>
+          <p class="text-sm text-slate-400">Email</p>
+          <p class="text-slate-200 font-medium">{{ profile.email }}</p>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-4 p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+        <div class="p-3 bg-slate-700/50 rounded-xl text-slate-400">
+          <lucide-icon [img]="MapPinIcon" class="w-6 h-6"></lucide-icon>
+        </div>
+        <div>
+          <p class="text-sm text-slate-400">Location</p>
+          <p class="text-slate-200 font-medium">{{ profile.location }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8 border-t border-slate-800/50">
+      <a [href]="profile.github" target="_blank" rel="noopener noreferrer" 
+         class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+        <lucide-icon [img]="GithubIcon" class="w-5 h-5"></lucide-icon>
+        <span class="font-medium">GitHub</span>
+      </a>
+      <a [href]="profile.linkedin" target="_blank" rel="noopener noreferrer" 
+         class="flex items-center gap-2 text-slate-400 hover:text-sky-400 transition-colors">
+        <lucide-icon [img]="LinkedinIcon" class="w-5 h-5"></lucide-icon>
+        <span class="font-medium">LinkedIn</span>
+      </a>
+    </div>
+
+    <div class="pt-8">
+      <a [href]="'mailto:' + profile.email"
+         class="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-sky-50 transition-colors shadow-lg hover:shadow-sky-500/20">
+        <lucide-icon [img]="SendIcon" class="w-5 h-5"></lucide-icon>
+        Say Hello
+      </a>
+    </div>
+  </div>
+</div>
