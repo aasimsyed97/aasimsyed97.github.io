@@ -1,14 +1,352 @@
-<!doctype html>
-<html lang="en" data-critters-container>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>PortfolioApp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}body{--tw-bg-opacity: 1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1));--tw-text-opacity: 1;color:rgb(226 232 240 / var(--tw-text-opacity, 1));-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-</style><link rel="stylesheet" href="/dist/portfolio-app/browser/styles-XUVFF7O3.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/dist/portfolio-app/browser/styles-XUVFF7O3.css"></noscript></head>
-<body>
-  <app-root></app-root>
-<script src="/dist/portfolio-app/browser/main-QUR775TC.js" type="module"></script><script src="/dist/portfolio-app/browser/main-QUR775TC.js" type="module"></script></body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aasim Syed | Backend Engineer</title>
+
+    <meta name="description"
+        content="Backend Engineer specializing in Java, Spring Boot, Distributed Systems, Elasticsearch and scalable enterprise applications.">
+
+    <!-- Typography System: Syne (Display), Plus Jakarta Sans (Body), JetBrains Mono (Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="light-theme">
+
+    <!-- Editorial Header / Nav -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AASIM SYED</a>
+            <nav class="nav-links">
+                <a href="#about"><span class="nav-num">01/</span>ABOUT</a>
+                <a href="#stack"><span class="nav-num">02/</span>STACK</a>
+                <a href="#impact"><span class="nav-num">03/</span>IMPACT</a>
+                <a href="#experience"><span class="nav-num">04/</span>EXP</a>
+                <a href="#projects"><span class="nav-num">05/</span>WORK</a>
+                <a href="#contact"><span class="nav-num">06/</span>CONTACT</a>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+                    <span class="toggle-label">THEME</span>
+                    <span class="toggle-status">DARK</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-layout">
+                <div class="hero-title-col">
+                    <h1 class="hero-title kinetic-title">
+                        BUILDING<br>
+                        RELIABLE<br>
+                        BACKEND<br>
+                        SYSTEMS<br>
+                        AT SCALE.
+                    </h1>
+                </div>
+
+                <div class="hero-info-col">
+                    <span class="hero-tag font-mono">BACKEND SOFTWARE ENGINEER &bull; DISTRIBUTED SYSTEMS</span>
+
+                    <p class="hero-description">
+                        I design enterprise-grade microservices, high-performance search infrastructure, and
+                        message-driven workflows using Java, Spring Boot, Elasticsearch, and RabbitMQ.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">VIEW WORK</a>
+                        <a href="#contact" class="btn-secondary">CONNECT</a>
+                    </div>
+
+                    <div class="hero-metrics-table">
+                        <div class="metric-row">
+                            <span class="metric-label font-mono">01 / PRODUCTION MICROSERVICES</span>
+                            <span class="metric-value font-display">20+</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label font-mono">02 / SEARCH SPEED IMPROVEMENT</span>
+                            <span class="metric-value font-display">25%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label font-mono">03 / INTRASERVICE LATENCY REDUCTION</span>
+                            <span class="metric-value font-display">30%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section border-top">
+            <div class="container grid-layout">
+                <div class="grid-left font-mono">
+                    <span class="section-num">01 /</span>
+                    <span class="section-name">ABOUT</span>
+                </div>
+
+                <div class="grid-right">
+                    <h2 class="section-title">Engineering systems that survive rapid growth.</h2>
+
+                    <div class="about-content">
+                        <p>
+                            For the last 3+ years, I've been building scalable backend systems and enterprise-grade
+                            applications. I focus on developing codebases that remain maintainable and performant under
+                            load.
+                        </p>
+                        <p>
+                            My engineering philosophy centers around distributed systems, clean search platforms, robust
+                            messaging queues, and reliable asynchronous execution.
+                        </p>
+                    </div>
+
+                    <div class="highlights-table">
+                        <div class="hl-row">
+                            <span class="hl-title font-display">SPRING BOOT</span>
+                            <span class="hl-desc">Migrating enterprise services seamlessly from version 2.7 to
+                                4.x.</span>
+                        </div>
+                        <div class="hl-row">
+                            <span class="hl-title font-display">ELASTICSEARCH</span>
+                            <span class="hl-desc">Upgrading index clusters from 7.x to 9.x while cutting query
+                                overhead.</span>
+                        </div>
+                        <div class="hl-row">
+                            <span class="hl-title font-display">RABBITMQ</span>
+                            <span class="hl-desc">Designing resilient asynchronous messaging workflows for
+                                decoupling.</span>
+                        </div>
+                        <div class="hl-row">
+                            <span class="hl-title font-display">SECURITY</span>
+                            <span class="hl-desc">Aligning architecture with OWASP security practices.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="stack" class="section border-top">
+            <div class="container grid-layout">
+                <div class="grid-left font-mono">
+                    <span class="section-num">02 /</span>
+                    <span class="section-name">STACK</span>
+                </div>
+
+                <div class="grid-right">
+                    <h2 class="section-title">Core Technology Stack</h2>
+
+                    <div class="stack-list">
+                        <div class="stack-item-row">
+                            <span class="stack-category font-display">BACKEND</span>
+                            <span class="stack-values">Java, Spring Boot, REST APIs, gRPC, Microservices</span>
+                        </div>
+                        <div class="stack-item-row">
+                            <span class="stack-category font-display">DATA</span>
+                            <span class="stack-values">PostgreSQL, Elasticsearch, Hazelcast</span>
+                        </div>
+                        <div class="stack-item-row">
+                            <span class="stack-category font-display">INFRASTRUCTURE</span>
+                            <span class="stack-values">AWS, Docker, Jenkins CI/CD</span>
+                        </div>
+                        <div class="stack-item-row">
+                            <span class="stack-category font-display">MESSAGING</span>
+                            <span class="stack-values">RabbitMQ, Event-Driven Architecture, Async Workflows</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section id="impact" class="section border-top">
+            <div class="container grid-layout">
+                <div class="grid-left font-mono">
+                    <span class="section-num">03 /</span>
+                    <span class="section-name">IMPACT</span>
+                </div>
+
+                <div class="grid-right">
+                    <h2 class="section-title">Engineering Highlights</h2>
+
+                    <div class="impact-table">
+                        <div class="impact-row">
+                            <div class="impact-meta font-mono">MIGRATION / Spring Boot</div>
+                            <div class="impact-content">
+                                <h3 class="impact-title">Spring Boot Migration</h3>
+                                <p class="impact-desc">Migrated critical enterprise services from Spring Boot 2.7 to 4.x
+                                    with zero downtime, upgrading libraries and improving startup efficiency.</p>
+                            </div>
+                        </div>
+
+                        <div class="impact-row">
+                            <div class="impact-meta font-mono">SEARCH / Elasticsearch</div>
+                            <div class="impact-content">
+                                <h3 class="impact-title">Elasticsearch Upgrade</h3>
+                                <p class="impact-desc">Upgraded our search platform from 7.x to 9.x, optimizing mapping
+                                    schemas and reducing query latency across high-throughput endpoints.</p>
+                            </div>
+                        </div>
+
+                        <div class="impact-row">
+                            <div class="impact-meta font-mono">COMMUNICATION / gRPC</div>
+                            <div class="impact-content">
+                                <h3 class="impact-title">gRPC Adoption</h3>
+                                <p class="impact-desc">Introduced a gRPC service-to-service communication layer,
+                                    replacing heavy JSON/REST calls and significantly reducing network overhead.</p>
+                            </div>
+                        </div>
+
+                        <div class="impact-row">
+                            <div class="impact-meta font-mono">QUEUES / RabbitMQ</div>
+                            <div class="impact-content">
+                                <h3 class="impact-title">RabbitMQ Workflows</h3>
+                                <p class="impact-desc">Implemented asynchronous message processing workflows to decouple
+                                    intense computing steps and increase system throughput.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section border-top">
+            <div class="container grid-layout">
+                <div class="grid-left font-mono">
+                    <span class="section-num">04 /</span>
+                    <span class="section-name">EXPERIENCE</span>
+                </div>
+
+                <div class="grid-right">
+                    <h2 class="section-title">Building Enterprise Platforms</h2>
+
+                    <div class="experience-timeline">
+                        <div class="exp-item">
+                            <div class="exp-meta">
+                                <span class="exp-company font-display">Prospecta Software</span>
+                                <span class="exp-date font-mono">2023 &mdash; PRESENT</span>
+                            </div>
+                            <div class="exp-content">
+                                <h3 class="exp-role">Backend Software Developer</h3>
+                                <p class="exp-summary">
+                                    Responsible for designing and maintaining core backend components, implementing
+                                    asynchronous system workflows, and optimizing database/search infrastructure.
+                                </p>
+                                <div class="exp-tags font-mono">
+                                    <span>Spring Migration</span>
+                                    <span>Elasticsearch Upgrade</span>
+                                    <span>gRPC Integration</span>
+                                    <span>RabbitMQ</span>
+                                    <span>Audit Logging</span>
+                                    <span>OWASP Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section border-top">
+            <div class="container grid-layout">
+                <div class="grid-left font-mono">
+                    <span class="section-num">05 /</span>
+                    <span class="section-name">WORK</span>
+                </div>
+
+                <div class="grid-right">
+                    <h2 class="section-title">Featured Projects</h2>
+
+                    <div class="project-showcase">
+                        <div class="project-item">
+                            <div class="project-meta">
+                                <h3 class="project-name font-display">Spring Stack Play</h3>
+                                <span class="project-type font-mono">Experimental Platform</span>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    An experimental environment created to validate, test, and benchmark cloud-native
+                                    microservice architecture patterns, database replication schemes, and event streams.
+                                </p>
+                                <div class="project-tags font-mono">
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>RabbitMQ</span>
+                                    <span>Elasticsearch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section border-top">
+            <div class="container grid-layout">
+                <div class="grid-left font-mono">
+                    <span class="section-num">06 /</span>
+                    <span class="section-name">CONTACT</span>
+                </div>
+
+                <div class="grid-right">
+                    <h2 class="section-title">Let's build something solid.</h2>
+
+                    <div class="contact-box">
+                        <p class="contact-text">
+                            I am always open to backend architecture discussions, optimization consulting, or team
+                            collaborations.
+                        </p>
+
+                        <div class="contact-links-grid">
+                            <div class="contact-link-row">
+                                <span class="contact-label font-mono">EMAIL</span>
+                                <a href="mailto:aasimsyed97@gmail.com"
+                                    class="contact-value underline-reveal">aasimsyed97@gmail.com</a>
+                            </div>
+                            <div class="contact-link-row">
+                                <span class="contact-label font-mono">RESUME</span>
+                                <a href="./AASIM_SYED_RESUME.pdf" download
+                                    class="contact-value underline-reveal">Download PDF Resume</a>
+                            </div>
+                            <div class="contact-link-row">
+                                <span class="contact-label font-mono">NETWORKS</span>
+                                <div class="contact-socials font-mono">
+                                    <a href="https://github.com/aasimsyed97" target="_blank" rel="noopener"
+                                        class="underline-reveal">GITHUB</a>
+                                    <span>&bull;</span>
+                                    <a href="https://www.linkedin.com/in/aasim-syed/" target="_blank" rel="noopener"
+                                        class="underline-reveal">LINKEDIN</a>
+                                    <a href="https://leetcode.com/u/sayedaasim555/" target="_blank" rel="noopener"
+                                        class="underline-reveal">LEETCODE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer border-top">
+        <div class="container footer-layout font-mono">
+            <span>&copy; 2026 AASIM SYED</span>
+            <span>DESIGNED BY Aasim Syed</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
